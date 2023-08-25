@@ -34,7 +34,7 @@ const Nav = () => {
             <li
               key={link.id}
               className={`
-          ${active === link.title ? "text-black-300" : "text-black-200"}
+          ${active === link.title ? "text-black-300 font-bold" : "text-black-200"}
           hover:text-black-300 text-[18px] font-semibold cursor-pointer`}
               onClick={() => setActive(link.title)}
             >

@@ -13,9 +13,9 @@ const Hero = () => {
       <div
         className={`${styles.paddingX} absolute inset-0 max-w-7xl mx-auto flex flex-row justify-center items-center gap-6 overflow-hidden`}
       >
-        <div className={`flex flex-col justify-center items-center ${animate.fadeIn} mt-5 animate__delay-1s`}>
-          <div className="w-5 h-5 rounded-full bg-primary" />
-          <div className="w-1 sm:h-80 h-60 line-gradient" />
+        <div className={`flex flex-col justify-center items-center ${animate.fadeInDown} animate__delay-1s animate__faster`}>
+          <div className={`w-5 h-5 rounded-full bg-primary mt-5`} />
+          <div className={`w-1 sm:h-80 h-60 line-gradient`} />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} ${animate.fadeIn}  animate__delay-2s`}>
