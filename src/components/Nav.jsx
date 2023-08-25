@@ -28,7 +28,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} py-5 flex justify-between items-center fixed w-full z-20 ${scrolling ? "blue-gradient py-2" : "gray-gradient"}`}
+      className={`${styles.paddingX} flex justify-between items-center fixed w-full z-20 ${scrolling ? "blue-gradient py-2" : "gray-gradient py-5"}`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-3" onClick={() => {
@@ -78,6 +78,7 @@ const Nav = () => {
                   <a
                     href={`#${link.id}`}
                     className="font-semibold hover:font-bold hover:text-black-300"
+                    onClick={() => {setToggle(!toggle); setActive(link.title)}}
                   >
                     {link.title}
                   </a>

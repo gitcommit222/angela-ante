@@ -29,9 +29,9 @@ const Hero = () => {
             <a
               href={resume}
               download="resume.pdf"
-              className="flex items-center justify-center gap-1 sm:text-[18px] text-[13px]"
+              className="flex items-center justify-center gap-1 sm:text-[18px] text-[13px] font-medium tracking-wider"
             >
-              Resume <HiOutlineDownload size={19} />
+              RESUME <HiOutlineDownload size={21} />
             </a>
           </div>
         </div>

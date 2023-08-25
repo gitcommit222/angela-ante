@@ -16,54 +16,109 @@ import {
   portfolio,
   design,
   webdev,
-  backend
+  backend,
 } from "../assets";
 
 export const navLinks = [
-    {
-        id: "about",
-        title: "ABOUT"
-    },
-    {
-        id: "work",
-        title: "WORK"
-    },
-    {
-        id: "contact",
-        title: "CONTACT"
-    },
-]
+  {
+    id: "about",
+    title: "ABOUT",
+  },
+  {
+    id: "work",
+    title: "WORK",
+  },
+  {
+    id: "contact",
+    title: "CONTACT",
+  },
+];
 
- const services = [
-    {
-      title: "UI/UX Design",
-      icon: design,
-    },
-    {
-      title: "Web Developer",
-      icon: webdev,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-  ];
+const services = [
+  {
+    title: "UI/UX Design",
+    icon: design,
+  },
+  {
+    title: "Web Developer",
+    icon: webdev,
+  },
+  {
+    title: "Backend Developer",
+    icon: backend,
+  },
+];
 
-  const experiences = [
-    {
-      title: "Frontend Developer Intern",
-      company_name: "BatStateU Digital Transformation Center (DTC)",
-      icon: batStateU,
-      iconBg: "linear-gradient(91deg, #BFBFBF 0%, rgba(115, 187, 201, 0.72) 100%)",
-      date: "January 2023 - June 2023",
-      points: [
-        "Developing and maintaining web application using HTML, CSS, JavaScript, PHP and other related technologies.",
-        "Collaborating with cross-functional teams including backend developers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
+const experiences = [
+  {
+    title: "Frontend Developer Intern",
+    company_name: "BatStateU Digital Transformation Center (DTC)",
+    icon: batStateU,
+    iconBg:
+      "linear-gradient(91deg, #BFBFBF 0%, rgba(115, 187, 201, 0.72) 100%)",
+    date: "January 2023 - June 2023",
+    points: [
+      "Developing and maintaining web application using HTML, CSS, JavaScript, PHP and other related technologies.",
+      "Collaborating with cross-functional teams including backend developers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
 
+const skills = [
+  {
+    frontEnd: [
+      {
+        title: "JavaScript",
+        icon: javascript,
+      },
+      {
+        title: "TypeScript",
+        icon: typescript,
+      },
+      {
+        title: "HTML",
+        icon: html,
+      },
+      {
+        title: "CSS",
+        icon: css,
+      },
+      {
+        title: "React",
+        icon: reactjs,
+      },
+      {
+        title: "Redux",
+        icon: redux,
+      },
+      {
+        title: "Tailwind",
+        icon: tailwind,
+      },
+      {
+        title: "Figma",
+        icon: figma,
+      },
+    ],
+    backend: [
+      {
+        title: "NodeJS",
+        icon: nodejs,
+      },
+      {
+        title: "MongoDB",
+        icon: mongodb,
+      },
+    ],
+    others: [
+      {
+        title: "Git",
+        icon: git,
+      },
+    ],
+  },
+];
 
-  export { services, experiences }
+export { services, experiences, skills };
