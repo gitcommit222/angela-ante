@@ -4,18 +4,36 @@ import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 
 import { logo, menu, close } from "../assets";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Nav = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [scrolling, setScrolling] = useState(false)
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <nav
-      className={`${styles.paddingX} py-5 gray-gradient flex justify-between items-center fixed w-full z-20`}
+      className={`${styles.paddingX} py-5 flex justify-between items-center fixed w-full z-20 ${scrolling ? "blue-gradient py-2" : "gray-gradient"}`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-3" onClick={() => {
           setActive("")
+          window.scrollTo(0, 0);
         }}>
           <img
             src={logo}
@@ -24,10 +42,10 @@ const Nav = () => {
             height={40}
             className="cursor-pointer"
           />
-          <h3 className="text-black-300 font-bold text-[18px] flex">
-            Mhar &nbsp;{" "}
-            <span className="sm:block hidden">| Mhar Nhel Valentin</span>{" "}
-          </h3>
+          <p className="text-black-300 font-bold text-[15px] lg:text-[18px] flex">
+            MHAR &nbsp;{" "}
+            <span className="md:block hidden">| MHAR NHEL VALENTIN</span>{" "}
+          </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (

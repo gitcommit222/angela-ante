@@ -19,6 +19,11 @@ import batStateUProj from './projects/batstateuproj.png';
 import portfolio from './projects/portfolio.png'
 import promptopia from './projects/promptopia.png'
 
+// Services
+import design from './design.png'
+import webdev from './frontend.png'
+import backend from './backend.png'
+
 // Primary Assets
 import logo from './logo.png';
 import close from './close.svg'
@@ -47,5 +52,8 @@ export {
     batStateUProj,
     promptopia,
     portfolio,
-    heropic
+    heropic,
+    design,
+    webdev,
+    backend
 }

@@ -36,12 +36,12 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <Tilt className={`lg:block hidden ${animate.fadeIn}  animate__delay-3s`}>
-            <div className="block w-[380px] rounded-full blue-gradient p-[5px] shadow-card">
+          <Tilt className={`lg:block hidden ${animate.fadeIn}  animate__delay-3s `}>
+            <div className="block w-[380px] rounded-full blue-gradient  p-[3px] shadow-card">
               <img
                 src={heropic}
                 alt="heropic"
-                className="hero-img rounded-full object-contain w-[380px] h-[380px] gray-gradient"
+                className="hero-img rounded-full object-contain w-[380px] h-[380px] line-gradient"
               />
             </div>
           </Tilt>

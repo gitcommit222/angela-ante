@@ -13,6 +13,12 @@
   color-scheme: light;
 }
 
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
 .blue-gradient {
   background: linear-gradient(91deg, #BFBFBF 0%, rgba(115, 187, 201, 0.72) 100%);
 }
@@ -28,3 +34,15 @@
 .hero-img {
   fill: lightgray 0px -38.878px / 100% 149.982% no-repeat;
 }
+
+
+.vertical-timeline-element--work .vertical-timeline-element-content {
+    
+    border-top: 4px solid #73BBC9;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.vertical-timeline-element-date {
+  color: #000
+}
+
