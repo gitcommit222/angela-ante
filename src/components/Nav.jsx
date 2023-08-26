@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 const Nav = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [scrolling, setScrolling] = useState(false)
+  const [scrolling, setScrolling] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -28,13 +28,21 @@ const Nav = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} flex justify-between items-center fixed w-full z-20 ${scrolling ? "blue-gradient py-2" : "gray-gradient py-5"}`}
+      className={`${
+        styles.paddingX
+      } flex justify-between items-center fixed w-full z-20 ${
+        scrolling ? "blue-gradient py-2" : "gray-gradient py-5"
+      }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link to="/" className="flex items-center gap-3" onClick={() => {
-          setActive("")
-          window.scrollTo(0, 0);
-        }}>
+        <Link
+          to="/"
+          className="flex items-center gap-3"
+          onClick={() => {
+            setActive("");
+            window.scrollTo(0, 0);
+          }}
+        >
           <img
             src={logo}
             alt="logo"
@@ -52,7 +60,11 @@ const Nav = () => {
             <li
               key={link.id}
               className={`
-          ${active === link.title ? "text-black-300 font-bold" : "text-black-200"}
+          ${
+            active === link.title
+              ? "text-black-300 font-bold"
+              : "text-black-200"
+          }
           hover:text-black-300 text-[18px] font-semibold cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
@@ -78,7 +90,10 @@ const Nav = () => {
                   <a
                     href={`#${link.id}`}
                     className="font-semibold hover:font-bold hover:text-black-300"
-                    onClick={() => {setToggle(!toggle); setActive(link.title)}}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(link.title);
+                    }}
                   >
                     {link.title}
                   </a>

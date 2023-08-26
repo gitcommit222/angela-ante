@@ -21,7 +21,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} ${animate.fadeIn}  animate__delay-2s`}>
             Hi, I am <span className="text-primary">Mhar Nhel</span>
           </h1>
-          <p className={`${styles.heroSubText} ${animate.fadeIn}  animate__delay-2s`}>
+          <p className={`${styles.heroSubText} ${animate.fadeIn}  animate__delay-2s font-mono`}>
             Web Developer, I develop web applications
             <br className="sm:block hidden" /> and user interfaces.
           </p>
@@ -29,7 +29,7 @@ const Hero = () => {
             <a
               href={resume}
               download="resume.pdf"
-              className="flex items-center justify-center gap-1 sm:text-[18px] text-[13px] font-medium tracking-wider"
+              className="flex items-center justify-center gap-1 sm:text-[18px] text-[13px] font-medium tracking-wider font-mono"
             >
               RESUME <HiOutlineDownload size={21} />
             </a>
