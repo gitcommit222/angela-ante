@@ -13,6 +13,10 @@
   color-scheme: light;
 }
 
+.icon-gradient {
+  background: linear-gradient(223deg, #007E96 0%, #A3CBD3 100%);
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

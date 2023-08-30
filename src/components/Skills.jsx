@@ -7,7 +7,7 @@ const Skills = () => {
     <>
       <div variants={textVariant()}>
         <p className={styles.sectionSubText}>WHAT I HAVE?</p>
-        <h2 className={styles.sectionHeadText}>My Skills.</h2>
+        <h2 className={styles.sectionHeadText}>Skills.</h2>
       </div>
     </>
   );

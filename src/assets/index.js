@@ -32,6 +32,9 @@ import menu from './menu.svg'
 // Hero Image
 import heropic from './heropic.png'
 
+// Work
+import github from './github.png'
+
 
 export { 
     logo,
@@ -55,5 +58,6 @@ export {
     heropic,
     design,
     webdev,
-    backend
+    backend,
+    github
 }

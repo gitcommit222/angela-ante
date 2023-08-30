@@ -13,19 +13,19 @@ const Hero = () => {
       <div
         className={`${styles.paddingX} absolute inset-0 max-w-7xl mx-auto flex flex-row justify-center items-center gap-6 overflow-hidden`}
       >
-        <div className={`flex flex-col justify-center items-center ${animate.fadeInDown} animate__delay-1s animate__faster`}>
+        <div className={`flex flex-col justify-center items-center ${animate.fadeIn} animate__delay-1s`}>
           <div className={`w-5 h-5 rounded-full bg-primary mt-5`} />
           <div className={`w-1 sm:h-80 h-60 line-gradient`} />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} ${animate.fadeIn}  animate__delay-2s`}>
+          <h1 className={`${styles.heroHeadText} ${animate.fadeIn} animate__delay-1s`}>
             Hi, I am <span className="text-primary">Mhar Nhel</span>
           </h1>
-          <p className={`${styles.heroSubText} ${animate.fadeIn}  animate__delay-2s font-mono`}>
+          <p className={`${styles.heroSubText} ${animate.fadeIn} animate__delay-1s font-mono`}>
             Web Developer, I develop web applications
             <br className="sm:block hidden" /> and user interfaces.
           </p>
-          <div className={`mt-5 p-2 bg-primary sm:w-[135px] w-[100px] rounded-[5px] mb-5 text-white cursor-pointer ${animate.fadeIn}  animate__delay-2s`}>
+          <div className={`mt-5 p-2 bg-primary sm:w-[135px] w-[100px] rounded-[5px] mb-5 text-white cursor-pointer ${animate.fadeIn} animate__delay-1s`}>
             <a
               href={resume}
               download="resume.pdf"
@@ -36,12 +36,12 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <Tilt className={`lg:block hidden ${animate.fadeIn}  animate__delay-3s `}>
-            <div className="block w-[380px] rounded-full blue-gradient  p-[3px] shadow-card">
+          <Tilt className={`lg:block hidden ${animate.fadeIn}  animate__delay-1s `}>
+            <div className="block w-[370px] rounded-full blue-gradient  p-[3px] shadow-card">
               <img
                 src={heropic}
                 alt="heropic"
-                className="hero-img rounded-full object-contain w-[380px] h-[380px] line-gradient"
+                className="hero-img rounded-full object-contain w-[370px] h-[370px] line-gradient"
               />
             </div>
           </Tilt>

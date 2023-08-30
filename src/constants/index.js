@@ -121,4 +121,71 @@ const skills = [
   },
 ];
 
-export { services, experiences, skills };
+const projects = [
+  {
+    name: "BatStateU RMS",
+    description:
+      "Efficiently explore, publish, and manage diverse research papers on a streamlined web platform for comprehensive research management.",
+    tags: [
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: batStateUProj,
+    source_code_link: "https://github.com/gitcommit222/new-rms-webdev",
+  },
+  {
+    name: "Promptopia",
+    description:
+      "An elegantly designed web application that empowers users to seamlessly create, update, delete, search, and access prompts with utmost efficiency.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: promptopia,
+    source_code_link: "https://github.com/gitcommit222/promptopia-nextjs",
+  },
+  {
+    name: "My Portfolio",
+    description:
+      "A comprehensive online portfolio adeptly showcasing my proficiencies and extensive experience within the realm of software development.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/gitcommit222/myportfolio",
+  },
+];
+
+
+export { services, experiences, skills, projects };
