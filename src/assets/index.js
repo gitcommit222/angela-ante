@@ -10,6 +10,8 @@ import reactjs from './tech/reactjs.png'
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png';
+import php from './tech/php.png';
+import python from './tech/python.png';
 
 // Company Logo
 import batStateU from './company/batstateu_logo.png'
@@ -51,6 +53,8 @@ export {
     redux,
     tailwind,
     typescript,
+    php,
+    python,
     batStateU,
     batStateUProj,
     promptopia,

@@ -10,6 +10,8 @@ import {
   redux,
   tailwind,
   typescript,
+  php,
+  python,
   batStateU,
   batStateUProj,
   promptopia,
@@ -68,56 +70,56 @@ const experiences = [
 
 const skills = [
   {
-    frontEnd: [
-      {
-        title: "JavaScript",
-        icon: javascript,
-      },
-      {
-        title: "TypeScript",
-        icon: typescript,
-      },
-      {
-        title: "HTML",
-        icon: html,
-      },
-      {
-        title: "CSS",
-        icon: css,
-      },
-      {
-        title: "React",
-        icon: reactjs,
-      },
-      {
-        title: "Redux",
-        icon: redux,
-      },
-      {
-        title: "Tailwind",
-        icon: tailwind,
-      },
-      {
-        title: "Figma",
-        icon: figma,
-      },
-    ],
-    backend: [
-      {
-        title: "NodeJS",
-        icon: nodejs,
-      },
-      {
-        title: "MongoDB",
-        icon: mongodb,
-      },
-    ],
-    others: [
-      {
-        title: "Git",
-        icon: git,
-      },
-    ],
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "Php",
+    icon: php,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
   },
 ];
 
@@ -172,10 +174,6 @@ const projects = [
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "threejs",
-        color: "green-text-gradient",
       },
       {
         name: "tailwindcss",

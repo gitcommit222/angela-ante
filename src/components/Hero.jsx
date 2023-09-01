@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <Tilt className={`lg:block hidden ${animate.fadeIn}  animate__delay-1s `}>
+          <Tilt className={`lg:block hidden ${animate.fadeIn}  animate__delay-2s `}>
             <div className="block w-[370px] rounded-full blue-gradient  p-[3px] shadow-card">
               <img
                 src={heropic}
