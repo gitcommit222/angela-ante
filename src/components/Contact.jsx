@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { textVariant, zoomIn } from "../utils/motion";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
+  const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -19,7 +23,59 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Marnel",
+          from_email: form.email,
+          to_email: "mharnhelvalentin@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          toast.success("Email sent. Thank you!", {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          toast.error("Something went wrong. Try again!", {
+            position: "top-center",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        }
+      );
+  };
   return (
     <>
       <div variants={textVariant()}>
@@ -27,7 +83,7 @@ const Contact = () => {
           <div className="w-full border border-black-400 rounded-md shadow-lg p-10 bg-white-100">
             <p className={styles.sectionSubText}>GET IN TOUCH</p>
             <h2 className={styles.sectionHeadText}>Contact Me</h2>
-            <form className="mt-8 flex flex-col gap-8">
+            <form className="mt-8 flex flex-col gap-8" onSubmit={handleSubmit} ref={formRef}>
               <label className="flex flex-col">
                 <span className="text-black-200 font-medium mb-4">
                   Your Name
