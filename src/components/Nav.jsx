@@ -43,7 +43,7 @@ const Nav = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className="text-black-300 font-bold text-[15px] lg:text-[18px] flex">
+          <p className="text-black-200 font-Ubuntu font-bold text-[15px] lg:text-[18px] flex">
             GELAY &nbsp;{" "}
             <span className="md:block hidden font-Ubuntu">| ANGELA ANTE</span>{" "}
           </p>
