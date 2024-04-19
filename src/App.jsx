@@ -35,7 +35,6 @@ const App = () => {
           <Hero />
         </section>
         <About />
-        <Experience />
         <Projects />
         <Skills />
         <section>

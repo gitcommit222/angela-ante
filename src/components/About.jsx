@@ -42,7 +42,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4  text-black-200 text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a recent graduate with a strong ardor for the IT realm, particularly
+        I'm a student with a strong ardor for the IT realm, particularly
         focused on web development. I'm on a mission to translate innovative
         ideas into captivating online experiences. Join me in exploring my
         journey of turning passion into pixels.
