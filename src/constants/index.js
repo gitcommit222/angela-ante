@@ -111,7 +111,7 @@ const projects = [
 			},
 		],
 		image: portfolio,
-		source_code_link: "https://github.com/gitcommit222/myportfolio",
+		source_code_link: "https://github.com/gitcommit222/angela-ante",
 	},
 ];
 
