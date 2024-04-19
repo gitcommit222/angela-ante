@@ -43,16 +43,9 @@ const Nav = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img
-            src={logo}
-            alt="logo"
-            width={40}
-            height={40}
-            className="cursor-pointer"
-          />
           <p className="text-black-300 font-bold text-[15px] lg:text-[18px] flex">
-            MHAR &nbsp;{" "}
-            <span className="md:block hidden">| MHAR NHEL VALENTIN</span>{" "}
+            Gelay &nbsp;{" "}
+            <span className="md:block hidden">| ANGELA ANTE</span>{" "}
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
