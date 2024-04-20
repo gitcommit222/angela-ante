@@ -37,15 +37,15 @@ const Nav = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 "
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <p className="text-black-300 font-bold text-[15px] lg:text-[18px] flex">
-            Gelay &nbsp;{" "}
-            <span className="md:block hidden">| ANGELA ANTE</span>{" "}
+          <p className="text-black-200 font-Ubuntu font-bold text-[15px] lg:text-[18px] flex">
+            GELAY &nbsp;{" "}
+            <span className="md:block hidden font-Ubuntu">| ANGELA ANTE</span>{" "}
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -55,8 +55,8 @@ const Nav = () => {
               className={`
           ${
             active === link.title
-              ? "text-black-300 font-bold"
-              : "text-black-200"
+              ? "text-black-300 font-bold font-Ubuntu"
+              : "text-black-200 font-Ubuntu"
           }
           hover:text-black-300 text-[18px] font-semibold cursor-pointer`}
               onClick={() => setActive(link.title)}
@@ -79,10 +79,10 @@ const Nav = () => {
           >
             <ul className="list-none flex flex-col justify-end items-start gap-3">
               {navLinks.map((link) => (
-                <li key={link.id} className="flex flex-col">
+                <li key={link.id} className="flex flex-col font-Ubuntu">
                   <a
                     href={`#${link.id}`}
-                    className="font-semibold hover:font-bold hover:text-black-300"
+                    className=" font-semibold hover:font-bold hover:text-black-300"
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(link.title);
